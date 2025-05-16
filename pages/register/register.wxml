@@ -1,0 +1,34 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="title">会员注册</view>
+    <view class="subtitle">加入我们</view>
+  </view>
+  
+  <view class="form">
+    <view class="form-item">
+      <text class="label">用户名</text>
+      <input class="input" type="text" placeholder="请输入用户名" model:value="{{username}}" />
+    </view>
+    
+    <view class="form-item">
+      <text class="label">密码</text>
+      <input class="input" password="true" placeholder="请输入密码" model:value="{{password}}" />
+    </view>
+    
+    <view class="form-item">
+      <text class="label">确认密码</text>
+      <input class="input" password="true" placeholder="请再次输入密码" model:value="{{confirmPassword}}" />
+    </view>
+    
+    <view class="form-item">
+      <text class="label">手机号码</text>
+      <input class="input" type="number" maxlength="11" placeholder="请输入手机号码" model:value="{{phoneNumber}}" />
+    </view>
+  </view>
+  
+  <view class="button-area">
+    <button class="register-btn" type="primary" bindtap="handleRegister">注册</button>
+    <view class="login-link" bindtap="navigateToLogin">已有账号？去登录</view>
+  </view>
+</view> 

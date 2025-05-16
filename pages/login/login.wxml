@@ -1,0 +1,24 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="title">用户登录</view>
+    <view class="subtitle">欢迎回来</view>
+  </view>
+  
+  <view class="form">
+    <view class="form-item">
+      <text class="label">用户名</text>
+      <input class="input" type="text" placeholder="请输入用户名" model:value="{{username}}" />
+    </view>
+    
+    <view class="form-item">
+      <text class="label">密码</text>
+      <input class="input" password="true" placeholder="请输入密码" model:value="{{password}}" />
+    </view>
+  </view>
+  
+  <view class="button-area">
+    <button class="login-btn" type="primary" bindtap="handleLogin">登录</button>
+    <view class="register-link" bindtap="navigateToRegister">还没有账号？去注册</view>
+  </view>
+</view> 
